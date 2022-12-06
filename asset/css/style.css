@@ -1,0 +1,40 @@
+#jumbotron {
+    margin-top: 10%;
+    padding: 31px;
+    background-color:#e0dddd;
+    padding:50px;
+}
+#addempform{
+    padding:10px 20px;
+}
+#addempform .form-group{
+    padding:5px;
+}
+#rating-form{
+    padding: 15px 46px;
+}   
+#rating-range span{
+    padding:0px 15px;
+}
+#signup-form{
+    padding:20px;
+    display:none;
+}
+#editButton{
+    display: inline;
+    font-size: 30px;
+    float: right;
+}
+#empForm{
+    display: none;
+}
+.ratingBadge{
+    cursor: pointer;
+}
+.editRatingform{
+    padding:20px;
+    display: none;
+}
+.table-hover{
+    cursor: pointer;
+}
