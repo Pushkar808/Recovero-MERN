@@ -1,0 +1,33 @@
+<div class="card" id="editForm">
+  <h5 class="card-header"><%= Empdata.name %></h5>
+  <div class="card-body">
+    <h5 class="card-title">Member Info:</h5>
+    <p class="card-text">
+    <form action="/admin/editmemData?id=<%= Empdata.id %>" method="POST">
+      <div class="form-group">
+        <label for="name"><b>Name: </b></label>
+        <input type="text" name="name" class="form-control" id="name" value="<%= Empdata.name %>" aria-describedby="name" placeholder="">
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+      <div class="form-group">
+        <label for="name"><b>Email: </b></label>
+        <input type="email" name="email" class="form-control" id="email" value="<%= Empdata.email %>">
+      </div>
+
+      <div class="form-check form-switch">
+        <% if(Empdata.is_admin){ %>
+        <input class="form-check-input" type="checkbox" id="mySwitch" name="isadmin" value='true' checked>
+        <% }else{ %>
+        <input class="form-check-input" type="checkbox" id="mySwitch" name="isadmin" value='true'>
+        <% } %>
+        <label class="form-check-label" for="mySwitch"> Is Admin</label>
+      </div>
+      <div class="form-text">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='/admin/resetPassword/?id=<%= Empdata.id %>' ">Reset Password</button>
+      </div>
+      <p><b>Note:</b> After Reset Password will become <b><u>123456</u></b></p>
+    </form>
+    </p>
+  </div>
+</div>

@@ -1,6 +1,3 @@
-<h1>Example heading <span class="badge badge-secondary">New</span></h1>
-
-
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -9,7 +6,6 @@
       <th scope="col">Edit</th>
       <th scope="col">Remove</th>
       <th scope="col"> </th>
-
     </tr>
   </thead>
 
@@ -17,19 +13,14 @@
   <tr>
     <td><%= Empdata[i].name %></td>
     <td><%= Empdata[i].email %></td>
-
-    <!-- <% if(!Empdata[i].is_admin){ %>
-    <td><button class=" btn btn-primary" onclick="location.href='/admin/addasAdmin/?id=<%= Empdata[i].id%>'">Make Admin</button></td>
-    <% }else{ %>
-    <td><button class="btn btn-danger" onclick="location.href='/admin/removeasAdmin/?id=<%= Empdata[i].id%>'"">Remove Admin</button ></td>
-    <% } %> -->
-    <td><a id=" removeEmp" href="/employee/admin/map/?id=<%= Empdata[i].id %>">Edit Member</a></td>
-    <td><a id="removeEmp" href="/employee/delete/?id=<%= Empdata[i].id %>">Remove</a></td>
-    <% if(Empdata[i].id==admin_id){ %>
     <td>
-      <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
-        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
-      </span>
+      <a id=" removeEmp" href="/admin/edit/?id=<%= Empdata[i].id %>">Edit</a>
+      
+    </td>
+    <td><a id="removeEmp" href="/employee/delete/?id=<%= Empdata[i].id %>">Remove</a></td>
+    <% if(Empdata[i].added_by==admin_id){ %>
+    <td>
+      <span class="badge badge-secondary">Added By You</span>
     </td>
     <% }else{ %>
     <td></td>

@@ -1,40 +1,45 @@
 #jumbotron {
-    margin-top: 10%;
-    padding: 31px;
-    background-color:#e0dddd;
-    padding:50px;
+    background-color: #e0dddd;
+    padding: 50px;
 }
-#addempform{
-    padding:10px 20px;
+
+#addempform {
+    padding: 10px 20px;
 }
-#addempform .form-group{
-    padding:5px;
+
+#addempform .form-group {
+    padding: 5px;
 }
-#rating-form{
-    padding: 15px 46px;
-}   
-#rating-range span{
-    padding:0px 15px;
-}
-#signup-form{
-    padding:20px;
-    display:none;
-}
-#editButton{
-    display: inline;
-    font-size: 30px;
-    float: right;
-}
-#empForm{
+
+#signup-form {
+    padding: 20px;
     display: none;
 }
-.ratingBadge{
-    cursor: pointer;
-}
-.editRatingform{
-    padding:20px;
+
+#empForm {
     display: none;
 }
-.table-hover{
+
+.table-hover {
     cursor: pointer;
+}
+
+.badge {
+    background-color: grey;
+}
+
+#editForm {
+    margin: auto;
+    margin-top: 90px;
+    width: 50%;
+    border: 3px solid rgb(0, 87, 128);
+    padding: 10px;
+}
+.user-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.Dashboard-card-body{
+    padding:20px;
 }
