@@ -31,8 +31,8 @@ app.use(session({
     resave: false,
     cookie: { maxAge: (1000 * 60 * 100) },
     store: MongoStore.create({
-        mongoUrl: 'mongodb://localhost:27017/userData',
-        // mongoUrl:"mongodb+srv://ok:orrF1ddSNHyzmVL5@atlascluster.nsa5syd.mongodb.net/?retryWrites=true&w=majority/userData",
+        // mongoUrl: 'mongodb://localhost:27017/userData',
+        mongoUrl:"mongodb+srv://practice_user:xD2oFC5W1XFjUIYu@cluster0.qqym1zm.mongodb.net/?retryWrites=true&w=majority",
         autoRemove: 'disabled'
     },
         function (err) {
