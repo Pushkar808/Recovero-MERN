@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 require('dotenv').config();
 // mongoose.connect('mongodb://localhost:27017/userData')
-mongoose.connect(process.env.MONGO_DB_URL)
+mongoose.connect("mongodb+srv://practice_user:xD2oFC5W1XFjUIYu@cluster0.qqym1zm.mongodb.net/?retryWrites=true&w=majority")
 const DB=mongoose.connection;
 
 DB.on('error',err=>logError(err));
